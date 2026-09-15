@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>SEGU TEC | Protección contra incendios y seguridad</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <meta
+    name="description"
+    content="SEGU TEC. Equipamiento, productos y soluciones para protección contra incendios y seguridad."
+  >
+
 
   <style>
+
+    /* =========================
+       NEUE MONTREAL
+    ========================== */
+
     @font-face {
-  font-family: 'Neue Montreal';
-  src: url('fonts/NeueMontreal-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
+      font-family: 'Neue Montreal';
+      src: url('fonts/NeueMontreal-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+    }
 
-@font-face {
-  font-family: 'Neue Montreal';
-  src: url('fonts/NeueMontreal-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-}
+    @font-face {
+      font-family: 'Neue Montreal';
+      src: url('fonts/NeueMontreal-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+    }
 
-@font-face {
-  font-family: 'Neue Montreal';
-  src: url('fonts/NeueMontreal-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
+    @font-face {
+      font-family: 'Neue Montreal';
+      src: url('fonts/NeueMontreal-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+
+    /* =========================
+       GENERAL
+    ========================== */
+
     * {
       margin: 0;
       padding: 0;
@@ -52,587 +68,1631 @@
       color: inherit;
     }
 
-    /* HEADER */
+
+    /* =========================
+       HEADER
+    ========================== */
 
     header {
-  width: 100%;
-  padding: 18px 6%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #ffffff;
-  border-bottom: 1px solid #111111;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+      width: 100%;
+      min-height: 88px;
 
-.logo {
-  display: flex;
-  align-items: center;
-}
+      padding: 16px 6%;
 
-.logo img {
-  height: 54px;
-  width: auto;
-  display: block;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  gap: 34px;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 1.2px;
-}
-
-nav a {
-  transition: 0.2s ease;
-}
-
-nav a:hover {
-  opacity: 0.45;
-}
-
-.nav-button {
-  background: #111111;
-  color: #ffffff;
-  padding: 14px 22px;
-  border-radius: 0;
-}
-
-.nav-button:hover {
-  background: #e31c23;
-  opacity: 1;
-}
-
-    /* HERO */
-
-    .hero {
-  min-height: calc(100vh - 90px);
-  padding: 0;
-  display: grid;
-  grid-template-columns: 68% 32%;
-  background: #ffffff;
-}
-
-.hero-main {
-  padding: 80px 6% 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.hero-topline {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-}
-
-.hero-dot {
-  width: 9px;
-  height: 9px;
-  background: #e31c23;
-}
-
-.hero h1 {
-  font-size: clamp(64px, 8vw, 128px);
-  line-height: 0.82;
-  letter-spacing: -7px;
-  font-weight: 700;
-  text-transform: uppercase;
-  max-width: 1100px;
-  margin: 80px 0 60px;
-}
-
-.hero h1 span {
-  color: #e31c23;
-}
-
-.hero-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 40px;
-  border-top: 1px solid #111111;
-  padding-top: 25px;
-}
-
-.hero-description {
-  max-width: 500px;
-  font-size: 17px;
-  line-height: 1.5;
-  color: #444444;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.hero-btn-primary,
-.hero-btn-secondary {
-  padding: 17px 24px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-radius: 0;
-  transition: 0.2s ease;
-}
-
-.hero-btn-primary {
-  background: #111111;
-  color: white;
-}
-
-.hero-btn-primary:hover {
-  background: #e31c23;
-}
-
-.hero-btn-secondary {
-  border: 1px solid #111111;
-  background: transparent;
-}
-
-.hero-btn-secondary:hover {
-  background: #111111;
-  color: #ffffff;
-}
-
-    /* SECCIONES */
-
-    section {
-      padding: 100px 7%;
-    }
-
-    .section-tag {
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-weight: 800;
-      color: #e31c23;
-      margin-bottom: 15px;
-    }
-
-    .section-title {
-      font-size: clamp(38px, 5vw, 65px);
-      letter-spacing: -3px;
-      line-height: 1;
-      margin-bottom: 55px;
-      max-width: 850px;
-    }
-
-    /* PRODUCTOS */
-
-    .products {
-      background: #ffffff;
-    }
-
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
-    }
-
-    .product-card {
-      background: #f3f3f3;
-      min-height: 260px;
-      padding: 35px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      transition: 0.25s ease;
-    }
-
-    .product-card:hover {
-      background: #111111;
-      color: #ffffff;
-      transform: translateY(-5px);
-    }
-
-    .product-number {
-      font-size: 12px;
-      font-weight: bold;
-      opacity: 0.5;
-      margin-bottom: auto;
-    }
-
-    .product-card h3 {
-      font-size: 26px;
-      margin-bottom: 8px;
-    }
-
-    .product-card p {
-      font-size: 15px;
-      opacity: 0.65;
-    }
-
-    /* NOSOTROS */
-
-    .about {
-      background: #111111;
-      color: white;
-    }
-
-    .about .section-title {
-      max-width: 950px;
-    }
-
-    .about-text {
-      max-width: 700px;
-      font-size: 20px;
-      color: #bdbdbd;
-    }
-
-    /* SERVICIOS */
-
-    .services-list {
-      border-top: 1px solid #dddddd;
-    }
-
-    .service {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 28px 0;
-      border-bottom: 1px solid #dddddd;
+
+      background: rgba(255,255,255,0.96);
+
+      border-bottom: 1px solid #111111;
+
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      backdrop-filter: blur(10px);
     }
 
-    .service h3 {
-      font-size: 25px;
+
+    .logo {
+      display: flex;
+      align-items: center;
     }
 
-    .service span {
-      color: #e31c23;
-      font-size: 25px;
+    .logo img {
+      height: 56px;
+      width: auto;
+      display: block;
     }
 
-    /* EMPRESAS */
 
-    .business {
-      background: #e31c23;
-      color: white;
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+
+      font-size: 12px;
+      font-weight: 500;
+
+      letter-spacing: 1.2px;
     }
 
-    .business .section-tag {
-      color: white;
-      opacity: 0.7;
+
+    nav a {
+      transition: 0.2s ease;
     }
 
-    .business p {
-      max-width: 650px;
-      font-size: 20px;
-      margin-bottom: 35px;
+    nav a:hover {
+      opacity: 0.45;
     }
 
-    .business .btn-secondary {
-      border-color: white;
-      color: white;
-    }
 
-    /* CONTACTO */
-
-    .contact {
-      text-align: center;
-      padding-top: 130px;
-      padding-bottom: 130px;
-    }
-
-    .contact .section-title {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .contact p {
-      color: #666666;
-      margin-bottom: 30px;
-      font-size: 18px;
-    }
-
-    /* FOOTER */
-
-    footer {
+    .nav-button {
       background: #111111;
-      color: white;
-      padding: 30px 7%;
+      color: #ffffff;
+
+      padding: 14px 22px;
+
+      transition: 0.2s ease;
+    }
+
+    .nav-button:hover {
+      background: #e31c23;
+      opacity: 1;
+    }
+
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      min-height: calc(100vh - 88px);
+
+      display: grid;
+      grid-template-columns: 68% 32%;
+
+      background: #ffffff;
+    }
+
+
+    .hero-main {
+
+      padding: 70px 8% 55px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+    }
+
+
+    .hero-topline {
+
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      font-size: 11px;
+      font-weight: 500;
+
+      letter-spacing: 1.8px;
+
+      text-transform: uppercase;
+
+    }
+
+
+    .hero-dot {
+
+      width: 9px;
+      height: 9px;
+
+      background: #e31c23;
+
+      flex-shrink: 0;
+
+    }
+
+
+    .hero h1 {
+
+      font-size: clamp(65px, 8vw, 125px);
+
+      line-height: 0.84;
+
+      letter-spacing: -7px;
+
+      font-weight: 700;
+
+      text-transform: uppercase;
+
+      margin: 80px 0 70px;
+
+      max-width: 1100px;
+
+    }
+
+
+    .hero h1 span {
+      color: #e31c23;
+    }
+
+
+    .hero-bottom {
+
       display: flex;
       justify-content: space-between;
-      gap: 20px;
-      font-size: 13px;
+      align-items: flex-end;
+
+      gap: 40px;
+
+      border-top: 1px solid #111111;
+
+      padding-top: 25px;
+
     }
 
-    /* MOBILE */
 
-    @media (max-width: 800px) {
+    .hero-description {
 
-      nav a:not(.nav-button) {
-        display: none;
-      }
+      max-width: 480px;
+
+      font-size: 17px;
+
+      color: #444444;
+
+    }
+
+
+    .hero-buttons {
+
+      display: flex;
+
+      gap: 10px;
+
+      flex-wrap: wrap;
+
+    }
+
+
+    .hero-btn-primary,
+    .hero-btn-secondary {
+
+      padding: 17px 24px;
+
+      font-size: 11px;
+
+      font-weight: 500;
+
+      letter-spacing: 1px;
+
+      text-transform: uppercase;
+
+      transition: 0.2s ease;
+
+    }
+
+
+    .hero-btn-primary {
+
+      background: #111111;
+
+      color: #ffffff;
+
+      border: 1px solid #111111;
+
+    }
+
+
+    .hero-btn-primary:hover {
+
+      background: #e31c23;
+
+      border-color: #e31c23;
+
+    }
+
+
+    .hero-btn-secondary {
+
+      border: 1px solid #111111;
+
+      background: transparent;
+
+    }
+
+
+    .hero-btn-secondary:hover {
+
+      background: #111111;
+
+      color: #ffffff;
+
+    }
+
+
+    /* =========================
+       PANEL ROJO HERO
+    ========================== */
+
+    .hero-side {
+
+      background: #e31c23;
+
+      color: #ffffff;
+
+      padding: 40px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+    }
+
+
+    .hero-side-number {
+
+      font-size: 11px;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .hero-side-title {
+
+      font-size: clamp(52px, 5vw, 82px);
+
+      line-height: 0.82;
+
+      letter-spacing: -4px;
+
+      font-weight: 700;
+
+      writing-mode: vertical-rl;
+
+      transform: rotate(180deg);
+
+      align-self: flex-end;
+
+    }
+
+
+    .hero-side-bottom {
+
+      border-top: 1px solid rgba(255,255,255,0.5);
+
+      padding-top: 18px;
+
+    }
+
+
+    .hero-side-bottom p {
+
+      font-size: 10px;
+
+      line-height: 1.7;
+
+      letter-spacing: 1.5px;
+
+      text-transform: uppercase;
+
+    }
+
+
+    /* =========================
+       SECCIONES GENERALES
+    ========================== */
+
+    section.section {
+
+      padding: 120px 6%;
+
+    }
+
+
+    .section-tag {
+
+      font-size: 11px;
+
+      text-transform: uppercase;
+
+      letter-spacing: 2px;
+
+      font-weight: 500;
+
+      color: #e31c23;
+
+      margin-bottom: 20px;
+
+    }
+
+
+    .section-title {
+
+      font-size: clamp(45px, 6vw, 82px);
+
+      line-height: 0.92;
+
+      letter-spacing: -4px;
+
+      font-weight: 700;
+
+      max-width: 900px;
+
+      margin-bottom: 70px;
+
+    }
+
+
+    /* =========================
+       PRODUCTOS
+    ========================== */
+
+    .products {
+
+      background: #ffffff;
+
+    }
+
+
+    .product-grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      border-top: 1px solid #111111;
+
+      border-left: 1px solid #111111;
+
+    }
+
+
+    .product-card {
+
+      min-height: 320px;
+
+      padding: 28px;
+
+      border-right: 1px solid #111111;
+
+      border-bottom: 1px solid #111111;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      transition: 0.25s ease;
+
+      background: #ffffff;
+
+    }
+
+
+    .product-card:hover {
+
+      background: #111111;
+
+      color: #ffffff;
+
+    }
+
+
+    .product-number {
+
+      font-size: 11px;
+
+      letter-spacing: 1px;
+
+      opacity: 0.5;
+
+    }
+
+
+    .product-content h3 {
+
+      font-size: 28px;
+
+      line-height: 1;
+
+      letter-spacing: -1px;
+
+      margin-bottom: 12px;
+
+    }
+
+
+    .product-content p {
+
+      font-size: 14px;
+
+      max-width: 300px;
+
+      opacity: 0.65;
+
+    }
+
+
+    .product-arrow {
+
+      margin-top: 25px;
+
+      font-size: 22px;
+
+      color: #e31c23;
+
+    }
+
+
+    /* =========================
+       SEGU TEC / NOSOTROS
+    ========================== */
+
+    .about {
+
+      background: #111111;
+
+      color: #ffffff;
+
+    }
+
+
+    .about .section-tag {
+
+      color: #e31c23;
+
+    }
+
+
+    .about .section-title {
+
+      max-width: 1000px;
+
+    }
+
+
+    .about-bottom {
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 80px;
+
+      margin-top: 90px;
+
+      padding-top: 30px;
+
+      border-top: 1px solid #444444;
+
+    }
+
+
+    .about-number {
+
+      font-size: clamp(80px, 12vw, 180px);
+
+      line-height: 0.8;
+
+      letter-spacing: -10px;
+
+      color: #e31c23;
+
+    }
+
+
+    .about-text {
+
+      font-size: 19px;
+
+      color: #bdbdbd;
+
+      max-width: 620px;
+
+      display: flex;
+
+      align-items: flex-end;
+
+    }
+
+
+    /* =========================
+       SERVICIOS
+    ========================== */
+
+    .services-list {
+
+      border-top: 1px solid #111111;
+
+    }
+
+
+    .service {
+
+      display: grid;
+
+      grid-template-columns: 70px 1fr auto;
+
+      align-items: center;
+
+      gap: 20px;
+
+      padding: 30px 0;
+
+      border-bottom: 1px solid #111111;
+
+      transition: 0.2s ease;
+
+    }
+
+
+    .service:hover {
+
+      padding-left: 15px;
+
+    }
+
+
+    .service-number {
+
+      font-size: 11px;
+
+      opacity: 0.5;
+
+    }
+
+
+    .service h3 {
+
+      font-size: clamp(22px, 3vw, 35px);
+
+      letter-spacing: -1px;
+
+      font-weight: 500;
+
+    }
+
+
+    .service-arrow {
+
+      font-size: 24px;
+
+      color: #e31c23;
+
+    }
+
+
+    /* =========================
+       EMPRESAS
+    ========================== */
+
+    .business {
+
+      background: #e31c23;
+
+      color: #ffffff;
+
+    }
+
+
+    .business .section-tag {
+
+      color: #ffffff;
+
+      opacity: 0.7;
+
+    }
+
+
+    .business .section-title {
+
+      max-width: 1000px;
+
+    }
+
+
+    .business-bottom {
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: flex-end;
+
+      gap: 50px;
+
+      border-top: 1px solid rgba(255,255,255,0.5);
+
+      padding-top: 30px;
+
+    }
+
+
+    .business p {
+
+      max-width: 600px;
+
+      font-size: 18px;
+
+    }
+
+
+    .business-button {
+
+      display: inline-block;
+
+      background: #ffffff;
+
+      color: #111111;
+
+      padding: 17px 24px;
+
+      font-size: 11px;
+
+      font-weight: 500;
+
+      letter-spacing: 1px;
+
+      text-transform: uppercase;
+
+      white-space: nowrap;
+
+      transition: 0.2s ease;
+
+    }
+
+
+    .business-button:hover {
+
+      background: #111111;
+
+      color: #ffffff;
+
+    }
+
+
+    /* =========================
+       CONTACTO
+    ========================== */
+
+    .contact {
+
+      background: #f4f4f2;
+
+    }
+
+
+    .contact-wrapper {
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 80px;
+
+      align-items: end;
+
+    }
+
+
+    .contact .section-title {
+
+      margin-bottom: 0;
+
+    }
+
+
+    .contact-right {
+
+      border-top: 1px solid #111111;
+
+      padding-top: 25px;
+
+    }
+
+
+    .contact-right p {
+
+      font-size: 17px;
+
+      margin-bottom: 30px;
+
+      max-width: 500px;
+
+      color: #555555;
+
+    }
+
+
+    .contact-button {
+
+      display: inline-block;
+
+      background: #111111;
+
+      color: #ffffff;
+
+      padding: 17px 24px;
+
+      font-size: 11px;
+
+      font-weight: 500;
+
+      letter-spacing: 1px;
+
+      text-transform: uppercase;
+
+      transition: 0.2s ease;
+
+    }
+
+
+    .contact-button:hover {
+
+      background: #e31c23;
+
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+
+      background: #111111;
+
+      color: #ffffff;
+
+      padding: 35px 6%;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 30px;
+
+      font-size: 10px;
+
+      letter-spacing: 1px;
+
+      text-transform: uppercase;
+
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================== */
+
+    @media (max-width: 850px) {
 
       header {
-        padding: 18px 5%;
+
+        min-height: 76px;
+
+        padding: 14px 5%;
+
       }
 
-      .hero,
-      section {
-        padding-left: 5%;
-        padding-right: 5%;
+
+      .logo img {
+
+        height: 44px;
+
       }
+
+
+      nav {
+
+        gap: 10px;
+
+      }
+
+
+      nav a:not(.nav-button) {
+
+        display: none;
+
+      }
+
+
+      .nav-button {
+
+        padding: 11px 14px;
+
+      }
+
+
+      .hero {
+
+        display: block;
+
+        min-height: auto;
+
+      }
+
+
+      .hero-main {
+
+        padding: 55px 5% 45px;
+
+      }
+
 
       .hero h1 {
-        letter-spacing: -3px;
+
+        font-size: clamp(55px, 16vw, 88px);
+
+        letter-spacing: -4px;
+
+        margin: 70px 0 50px;
+
       }
+
+
+      .hero-bottom {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+      }
+
+
+      .hero-buttons {
+
+        width: 100%;
+
+      }
+
+
+      .hero-btn-primary,
+      .hero-btn-secondary {
+
+        width: 100%;
+
+        text-align: center;
+
+      }
+
+
+      .hero-side {
+
+        min-height: 300px;
+
+        padding: 30px 5%;
+
+      }
+
+
+      .hero-side-title {
+
+        writing-mode: horizontal-tb;
+
+        transform: none;
+
+        align-self: flex-start;
+
+        font-size: 55px;
+
+      }
+
+
+      section.section {
+
+        padding: 90px 5%;
+
+      }
+
+
+      .section-title {
+
+        letter-spacing: -3px;
+
+        margin-bottom: 50px;
+
+      }
+
 
       .product-grid {
+
         grid-template-columns: 1fr;
+
       }
 
-      .service h3 {
-        font-size: 20px;
+
+      .product-card {
+
+        min-height: 250px;
+
       }
+
+
+      .about-bottom {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+      }
+
+
+      .about-number {
+
+        letter-spacing: -5px;
+
+      }
+
+
+      .service {
+
+        grid-template-columns: 45px 1fr auto;
+
+      }
+
+
+      .business-bottom {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+      }
+
+
+      .business-button {
+
+        width: 100%;
+
+        text-align: center;
+
+      }
+
+
+      .contact-wrapper {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+      }
+
+
+      .contact-button {
+
+        width: 100%;
+
+        text-align: center;
+
+      }
+
 
       footer {
+
         flex-direction: column;
+
       }
+
     }
+
   </style>
+
 </head>
+
 
 <body>
 
-<header>
-  <a href="#" class="logo">
-  <img src="logo-segu-tec.png" alt="SEGU TEC">
-</a>
-  
-  <nav>
-    <a href="#productos">Productos</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#nosotros">SEGU TEC</a>
-    <a href="#contacto" class="nav-button">Contacto</a>
-  </nav>
-</header>
 
+  <!-- =========================
+       HEADER
+  ========================== -->
 
-<main>
+  <header>
 
-  <!-- PORTADA -->
-
-  <section class="hero">
-
-    <div class="hero-content">
-
-      <div class="eyebrow">
-        Protección contra incendios + Seguridad
-      </div>
-
-      <h1>
-        Seguridad que protege lo que importa.
-      </h1>
-
-      <p>
-        Equipamiento y soluciones para prevención contra incendios
-        y seguridad para hogares, comercios, empresas e industrias.
-      </p>
-
-      <div class="buttons">
-        <a href="#productos" class="btn-primary">
-          Ver productos
-        </a>
-
-        <a href="#contacto" class="btn-secondary">
-          Solicitar presupuesto
-        </a>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- PRODUCTOS -->
-
-  <section class="products" id="productos">
-
-    <div class="section-tag">
-      Productos
-    </div>
-
-    <h2 class="section-title">
-      Todo lo que necesitás para proteger tu espacio.
-    </h2>
-
-    <div class="product-grid">
-
-      <div class="product-card">
-        <div class="product-number">01</div>
-        <h3>Matafuegos</h3>
-        <p>Equipos para distintos tipos de riesgo y necesidades.</p>
-      </div>
-
-      <div class="product-card">
-        <div class="product-number">02</div>
-        <h3>Detección y alarma</h3>
-        <p>Equipamiento para detección temprana y prevención.</p>
-      </div>
-
-      <div class="product-card">
-        <div class="product-number">03</div>
-        <h3>Iluminación de emergencia</h3>
-        <p>Soluciones para evacuación y circulación segura.</p>
-      </div>
-
-      <div class="product-card">
-        <div class="product-number">04</div>
-        <h3>Señalización</h3>
-        <p>Cartelería y elementos de señalización preventiva.</p>
-      </div>
-
-      <div class="product-card">
-        <div class="product-number">05</div>
-        <h3>Equipamiento contra incendios</h3>
-        <p>Elementos para prevención, respuesta y protección.</p>
-      </div>
-
-      <div class="product-card">
-        <div class="product-number">06</div>
-        <h3>Seguridad</h3>
-        <p>Elementos de protección para distintos espacios.</p>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- NOSOTROS -->
-
-  <section class="about" id="nosotros">
-
-    <div class="section-tag">
-      SEGU TEC
-    </div>
-
-    <h2 class="section-title">
-      Prevenir también es proteger.
-    </h2>
-
-    <p class="about-text">
-      En SEGU TEC brindamos soluciones y equipamiento para
-      prevención contra incendios y seguridad, acompañando a
-      particulares, comercios y empresas a encontrar los elementos
-      adecuados para cada espacio.
-    </p>
-
-  </section>
-
-
-  <!-- SERVICIOS -->
-
-  <section id="servicios">
-
-    <div class="section-tag">
-      Servicios
-    </div>
-
-    <h2 class="section-title">
-      Más que productos.
-    </h2>
-
-    <div class="services-list">
-
-      <div class="service">
-        <h3>Recarga de matafuegos</h3>
-        <span>→</span>
-      </div>
-
-      <div class="service">
-        <h3>Mantenimiento</h3>
-        <span>→</span>
-      </div>
-
-      <div class="service">
-        <h3>Asesoramiento</h3>
-        <span>→</span>
-      </div>
-
-      <div class="service">
-        <h3>Soluciones para empresas</h3>
-        <span>→</span>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- EMPRESAS -->
-
-  <section class="business">
-
-    <div class="section-tag">
-      Empresas
-    </div>
-
-    <h2 class="section-title">
-      ¿Necesitás equipar tu comercio o empresa?
-    </h2>
-
-    <p>
-      Contanos qué necesitás y te ayudamos a encontrar una solución
-      acorde a las características de tu espacio.
-    </p>
-
-    <a href="#contacto" class="btn-secondary">
-      Solicitar presupuesto
+    <a href="#" class="logo">
+      <img src="logo-segu-tec.png" alt="SEGU TEC">
     </a>
 
-  </section>
+
+    <nav>
+
+      <a href="#productos">PRODUCTOS</a>
+
+      <a href="#servicios">SERVICIOS</a>
+
+      <a href="#nosotros">SEGU TEC</a>
+
+      <a href="#contacto" class="nav-button">
+        CONTACTO ↗
+      </a>
+
+    </nav>
+
+  </header>
 
 
-  <!-- CONTACTO -->
 
-  <section class="contact" id="contacto">
+  <main>
 
-    <div class="section-tag">
-      Contacto
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+
+      <div class="hero-main">
+
+
+        <div class="hero-topline">
+
+          <span class="hero-dot"></span>
+
+          SEGU TEC — FIRE & SAFETY EQUIPMENT
+
+        </div>
+
+
+        <h1>
+
+          PROTECCIÓN<br>
+
+          QUE <span>RESPONDE.</span>
+
+        </h1>
+
+
+        <div class="hero-bottom">
+
+
+          <p class="hero-description">
+
+            Equipamiento contra incendios y seguridad para comercios,
+            empresas, industrias y hogares.
+
+          </p>
+
+
+          <div class="hero-buttons">
+
+
+            <a href="#productos" class="hero-btn-primary">
+
+              VER PRODUCTOS ↗
+
+            </a>
+
+
+            <a href="#contacto" class="hero-btn-secondary">
+
+              PEDIR PRESUPUESTO
+
+            </a>
+
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="hero-side">
+
+
+        <div class="hero-side-number">
+
+          SEG / 001
+
+        </div>
+
+
+        <div class="hero-side-title">
+
+          FIRE<br>
+          SAFETY
+
+        </div>
+
+
+        <div class="hero-side-bottom">
+
+          <p>
+
+            PREVENCIÓN<br>
+            PROTECCIÓN<br>
+            SEGURIDAD
+
+          </p>
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         PRODUCTOS
+    ========================== -->
+
+    <section class="section products" id="productos">
+
+
+      <div class="section-tag">
+
+        01 / PRODUCTOS
+
+      </div>
+
+
+      <h2 class="section-title">
+
+        TODO LO QUE NECESITÁS PARA PROTEGER TU ESPACIO.
+
+      </h2>
+
+
+      <div class="product-grid">
+
+
+        <div class="product-card">
+
+          <div class="product-number">
+            01
+          </div>
+
+          <div class="product-content">
+
+            <h3>
+              Matafuegos
+            </h3>
+
+            <p>
+              Equipos para distintos tipos de riesgo y necesidades.
+            </p>
+
+            <div class="product-arrow">
+              ↗
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-card">
+
+          <div class="product-number">
+            02
+          </div>
+
+          <div class="product-content">
+
+            <h3>
+              Detección y alarma
+            </h3>
+
+            <p>
+              Equipamiento para detección temprana y prevención.
+            </p>
+
+            <div class="product-arrow">
+              ↗
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-card">
+
+          <div class="product-number">
+            03
+          </div>
+
+          <div class="product-content">
+
+            <h3>
+              Iluminación de emergencia
+            </h3>
+
+            <p>
+              Soluciones para evacuación y circulación segura.
+            </p>
+
+            <div class="product-arrow">
+              ↗
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-card">
+
+          <div class="product-number">
+            04
+          </div>
+
+          <div class="product-content">
+
+            <h3>
+              Señalización
+            </h3>
+
+            <p>
+              Cartelería y señalización preventiva para distintos espacios.
+            </p>
+
+            <div class="product-arrow">
+              ↗
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-card">
+
+          <div class="product-number">
+            05
+          </div>
+
+          <div class="product-content">
+
+            <h3>
+              Protección contra incendios
+            </h3>
+
+            <p>
+              Equipamiento para prevención, respuesta y protección.
+            </p>
+
+            <div class="product-arrow">
+              ↗
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-card">
+
+          <div class="product-number">
+            06
+          </div>
+
+          <div class="product-content">
+
+            <h3>
+              Seguridad
+            </h3>
+
+            <p>
+              Elementos y soluciones para distintos entornos.
+            </p>
+
+            <div class="product-arrow">
+              ↗
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         NOSOTROS
+    ========================== -->
+
+    <section class="section about" id="nosotros">
+
+
+      <div class="section-tag">
+
+        02 / SEGU TEC
+
+      </div>
+
+
+      <h2 class="section-title">
+
+        PREVENIR TAMBIÉN ES PROTEGER.
+
+      </h2>
+
+
+      <div class="about-bottom">
+
+
+        <div class="about-number">
+
+          360°
+
+        </div>
+
+
+        <p class="about-text">
+
+          En SEGU TEC brindamos equipamiento y soluciones para
+          prevención contra incendios y seguridad. Trabajamos para
+          acompañar a hogares, comercios, empresas e industrias a
+          encontrar la protección adecuada para cada espacio.
+
+        </p>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         SERVICIOS
+    ========================== -->
+
+    <section class="section" id="servicios">
+
+
+      <div class="section-tag">
+
+        03 / SERVICIOS
+
+      </div>
+
+
+      <h2 class="section-title">
+
+        MÁS QUE PRODUCTOS.
+
+      </h2>
+
+
+      <div class="services-list">
+
+
+        <div class="service">
+
+          <div class="service-number">
+            01
+          </div>
+
+          <h3>
+            Recarga de matafuegos
+          </h3>
+
+          <div class="service-arrow">
+            ↗
+          </div>
+
+        </div>
+
+
+
+        <div class="service">
+
+          <div class="service-number">
+            02
+          </div>
+
+          <h3>
+            Mantenimiento
+          </h3>
+
+          <div class="service-arrow">
+            ↗
+          </div>
+
+        </div>
+
+
+
+        <div class="service">
+
+          <div class="service-number">
+            03
+          </div>
+
+          <h3>
+            Asesoramiento
+          </h3>
+
+          <div class="service-arrow">
+            ↗
+          </div>
+
+        </div>
+
+
+
+        <div class="service">
+
+          <div class="service-number">
+            04
+          </div>
+
+          <h3>
+            Soluciones para empresas
+          </h3>
+
+          <div class="service-arrow">
+            ↗
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         EMPRESAS
+    ========================== -->
+
+    <section class="section business">
+
+
+      <div class="section-tag">
+
+        04 / EMPRESAS
+
+      </div>
+
+
+      <h2 class="section-title">
+
+        ¿NECESITÁS EQUIPAR TU COMERCIO O EMPRESA?
+
+      </h2>
+
+
+      <div class="business-bottom">
+
+
+        <p>
+
+          Contanos qué necesitás y te ayudamos a encontrar
+          el equipamiento y las soluciones adecuadas para
+          las características de tu espacio.
+
+        </p>
+
+
+        <a href="#contacto" class="business-button">
+
+          SOLICITAR PRESUPUESTO ↗
+
+        </a>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+
+    <section class="section contact" id="contacto">
+
+
+      <div class="section-tag">
+
+        05 / CONTACTO
+
+      </div>
+
+
+      <div class="contact-wrapper">
+
+
+        <h2 class="section-title">
+
+          PROTEGÉ HOY LO QUE IMPORTA.
+
+        </h2>
+
+
+        <div class="contact-right">
+
+
+          <p>
+
+            Consultanos por productos, equipamiento,
+            recarga de matafuegos o presupuestos para tu
+            hogar, comercio o empresa.
+
+          </p>
+
+
+          <a href="#" class="contact-button">
+
+            HABLAR CON SEGU TEC ↗
+
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+
+    <div>
+
+      © 2026 SEGU TEC
+
     </div>
 
-    <h2 class="section-title">
-      Protegé hoy lo que importa.
-    </h2>
 
-    <p>
-      Consultanos por productos, recargas, equipamiento o presupuestos.
-    </p>
+    <div>
 
-    <a href="#" class="btn-primary">
-      Hablar con SEGU TEC
-    </a>
+      FIRE & SAFETY EQUIPMENT
 
-  </section>
-
-</main>
+    </div>
 
 
-<footer>
+    <div>
 
-  <div>
-    © 2026 SEGU TEC
-  </div>
+      PROTECCIÓN CONTRA INCENDIOS + SEGURIDAD
 
-  <div>
-    Protección contra incendios y seguridad
-  </div>
+    </div>
 
-</footer>
+
+  </footer>
+
 
 </body>
+
 </html>
