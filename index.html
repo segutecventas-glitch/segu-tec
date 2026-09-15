@@ -45,10 +45,15 @@
     }
 
     .logo {
-      font-size: 27px;
-      font-weight: 900;
-      letter-spacing: -1px;
-    }
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 42px;
+  width: auto;
+  display: block;
+}
 
     nav {
       display: flex;
@@ -333,9 +338,9 @@
 
 <header>
   <a href="#" class="logo">
-  <img src="assets/logo-segu-tec.png" alt="SEGU TEC">
+  <img src="logo-segu-tec.png" alt="SEGU TEC">
 </a>
-
+  
   <nav>
     <a href="#productos">Productos</a>
     <a href="#servicios">Servicios</a>
