@@ -6,45 +6,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>SEGU TEC | Protección contra incendios y seguridad</title>
+  <title>SEGU TEC | Seguridad y prevención contra incendios</title>
 
   <meta
     name="description"
-    content="SEGU TEC. Equipamiento, productos y soluciones para protección contra incendios y seguridad."
+    content="SEGU TEC. Equipamiento, productos y soluciones para seguridad y prevención contra incendios."
   >
-
 
   <style>
 
-    /* =========================
+    /* =========================================
        NEUE MONTREAL
-    ========================== */
+    ========================================== */
 
     @font-face {
       font-family: 'Neue Montreal';
-      src: url('fonts/NeueMontreal-Regular.woff2') format('woff2');
+      src: url('NeueMontreal-Regular.otf') format('opentype');
       font-weight: 400;
       font-style: normal;
     }
 
     @font-face {
       font-family: 'Neue Montreal';
-      src: url('fonts/NeueMontreal-Medium.woff2') format('woff2');
+      src: url('NeueMontreal-Medium.otf') format('opentype');
       font-weight: 500;
       font-style: normal;
     }
 
     @font-face {
       font-family: 'Neue Montreal';
-      src: url('fonts/NeueMontreal-Bold.woff2') format('woff2');
+      src: url('NeueMontreal-Bold.otf') format('opentype');
       font-weight: 700;
       font-style: normal;
     }
 
 
-    /* =========================
+    /* =========================================
        GENERAL
-    ========================== */
+    ========================================== */
 
     * {
       margin: 0;
@@ -69,9 +68,9 @@
     }
 
 
-    /* =========================
+    /* =========================================
        HEADER
-    ========================== */
+    ========================================== */
 
     header {
       width: 100%;
@@ -83,7 +82,7 @@
       justify-content: space-between;
       align-items: center;
 
-      background: rgba(255,255,255,0.96);
+      background: rgba(255, 255, 255, 0.97);
 
       border-bottom: 1px solid #111111;
 
@@ -93,7 +92,6 @@
 
       backdrop-filter: blur(10px);
     }
-
 
     .logo {
       display: flex;
@@ -106,7 +104,6 @@
       display: block;
     }
 
-
     nav {
       display: flex;
       align-items: center;
@@ -114,10 +111,8 @@
 
       font-size: 12px;
       font-weight: 500;
-
       letter-spacing: 1.2px;
     }
-
 
     nav a {
       transition: 0.2s ease;
@@ -126,7 +121,6 @@
     nav a:hover {
       opacity: 0.45;
     }
-
 
     .nav-button {
       background: #111111;
@@ -138,14 +132,14 @@
     }
 
     .nav-button:hover {
-      background: #e31c23;
+      background: #ed1c24;
       opacity: 1;
     }
 
 
-    /* =========================
+    /* =========================================
        HERO
-    ========================== */
+    ========================================== */
 
     .hero {
       min-height: calc(100vh - 88px);
@@ -157,18 +151,19 @@
     }
 
 
+    /* IZQUIERDA */
+
     .hero-main {
-  padding: 70px 8% 55px;
+      padding: 70px 8% 55px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
-  background: #ffffff;
-}
+      background: #ffffff;
+    }
 
     .hero-topline {
-
       display: flex;
       align-items: center;
       gap: 12px;
@@ -177,30 +172,22 @@
       font-weight: 500;
 
       letter-spacing: 1.8px;
-
       text-transform: uppercase;
-
     }
 
-
     .hero-dot {
-
       width: 9px;
       height: 9px;
 
-      background: #e31c23;
+      background: #ed1c24;
 
       flex-shrink: 0;
-
     }
 
-
     .hero h1 {
-
       font-size: clamp(65px, 8vw, 125px);
 
       line-height: 0.84;
-
       letter-spacing: -7px;
 
       font-weight: 700;
@@ -210,17 +197,13 @@
       margin: 80px 0 70px;
 
       max-width: 1100px;
-
     }
-
 
     .hero h1 span {
-      color: #e31c23;
+      color: #ed1c24;
     }
 
-
     .hero-bottom {
-
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
@@ -230,146 +213,168 @@
       border-top: 1px solid #111111;
 
       padding-top: 25px;
-
     }
 
-
     .hero-description {
-
       max-width: 480px;
 
       font-size: 17px;
 
       color: #444444;
-
     }
-
 
     .hero-buttons {
-
       display: flex;
-
       gap: 10px;
-
       flex-wrap: wrap;
-
     }
-
 
     .hero-btn-primary,
     .hero-btn-secondary {
-
       padding: 17px 24px;
 
       font-size: 11px;
-
       font-weight: 500;
 
       letter-spacing: 1px;
-
       text-transform: uppercase;
 
       transition: 0.2s ease;
-
     }
 
-
     .hero-btn-primary {
-
       background: #111111;
-
       color: #ffffff;
 
       border: 1px solid #111111;
-
     }
-
 
     .hero-btn-primary:hover {
-
-      background: #e31c23;
-
-      border-color: #e31c23;
-
+      background: #ed1c24;
+      border-color: #ed1c24;
     }
 
-
     .hero-btn-secondary {
-
       border: 1px solid #111111;
 
       background: transparent;
-
     }
-
 
     .hero-btn-secondary:hover {
-
       background: #111111;
-
       color: #ffffff;
-
     }
 
 
-    /* =========================
-       PANEL ROJO HERO
-    ========================== */
+    /* =========================================
+       HERO ROJO
+    ========================================== */
 
     .hero-side {
-
-      background: #e31c23;
-
+      background: #ed1c24;
       color: #ffffff;
 
       padding: 40px;
 
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
 
+      min-height: calc(100vh - 88px);
     }
 
 
+    /* FOTO CENTRAL */
+
+    .hero-side-image {
+      position: absolute;
+
+      width: 72%;
+      height: 58%;
+
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+
+      object-fit: cover;
+      object-position: center;
+
+      filter: brightness(0.76) contrast(1.05);
+
+      z-index: 1;
+    }
+
+
+    /* SEG / 001 */
+
     .hero-side-number {
+      position: absolute;
+
+      top: 40px;
+      left: 40px;
+
+      z-index: 5;
 
       font-size: 11px;
 
       letter-spacing: 2px;
-
     }
 
 
+    /* TITULO SOBRE LA FOTO */
+
     .hero-side-title {
+      position: absolute;
 
-       font-size: clamp(40px, 3.6vw, 58px);
+      top: 50%;
+      left: 50%;
 
-      line-height: 0.82;
+      transform:
+        translate(-50%, -50%)
+        rotate(-90deg);
 
-      letter-spacing: -4px;
+      z-index: 5;
+
+      color: #ffffff;
+
+      font-size: clamp(32px, 3.4vw, 58px);
+
+      line-height: 0.86;
+
+      letter-spacing: -2px;
 
       font-weight: 700;
 
-      writing-mode: vertical-rl;
+      text-transform: uppercase;
 
-      transform: rotate(180deg);
+      white-space: nowrap;
 
-      align-self: flex-end;
-
+      text-shadow:
+        0px 3px 14px rgba(0, 0, 0, 0.30);
     }
 
+    .hero-side-title span {
+      display: block;
+    }
+
+
+    /* TEXTO INFERIOR */
 
     .hero-side-bottom {
+      position: absolute;
 
-      border-top: 1px solid rgba(255,255,255,0.5);
+      left: 40px;
+      right: 40px;
+      bottom: 40px;
+
+      z-index: 5;
+
+      border-top: 1px solid rgba(255,255,255,0.65);
 
       padding-top: 18px;
-
     }
 
-
     .hero-side-bottom p {
-
       font-size: 10px;
 
       line-height: 1.7;
@@ -377,23 +382,18 @@
       letter-spacing: 1.5px;
 
       text-transform: uppercase;
-
     }
 
 
-    /* =========================
+    /* =========================================
        SECCIONES GENERALES
-    ========================== */
+    ========================================== */
 
     section.section {
-
       padding: 120px 6%;
-
     }
 
-
     .section-tag {
-
       font-size: 11px;
 
       text-transform: uppercase;
@@ -402,15 +402,12 @@
 
       font-weight: 500;
 
-      color: #e31c23;
+      color: #ed1c24;
 
       margin-bottom: 20px;
-
     }
 
-
     .section-title {
-
       font-size: clamp(45px, 6vw, 82px);
 
       line-height: 0.92;
@@ -422,42 +419,32 @@
       max-width: 900px;
 
       margin-bottom: 70px;
-
     }
 
 
-    /* =========================
+    /* =========================================
        PRODUCTOS
-    ========================== */
+    ========================================== */
 
     .products {
-
       background: #ffffff;
-
     }
 
-
     .product-grid {
-
       display: grid;
 
       grid-template-columns: repeat(3, 1fr);
 
       border-top: 1px solid #111111;
-
       border-left: 1px solid #111111;
-
     }
 
-
     .product-card {
-
       min-height: 320px;
 
       padding: 28px;
 
       border-right: 1px solid #111111;
-
       border-bottom: 1px solid #111111;
 
       display: flex;
@@ -467,32 +454,22 @@
       transition: 0.25s ease;
 
       background: #ffffff;
-
     }
-
 
     .product-card:hover {
-
       background: #111111;
-
       color: #ffffff;
-
     }
 
-
     .product-number {
-
       font-size: 11px;
 
       letter-spacing: 1px;
 
       opacity: 0.5;
-
     }
 
-
     .product-content h3 {
-
       font-size: 28px;
 
       line-height: 1;
@@ -500,61 +477,44 @@
       letter-spacing: -1px;
 
       margin-bottom: 12px;
-
     }
 
-
     .product-content p {
-
       font-size: 14px;
 
       max-width: 300px;
 
       opacity: 0.65;
-
     }
 
-
     .product-arrow {
-
       margin-top: 25px;
 
       font-size: 22px;
 
-      color: #e31c23;
-
+      color: #ed1c24;
     }
 
 
-    /* =========================
-       SEGU TEC / NOSOTROS
-    ========================== */
+    /* =========================================
+       NOSOTROS
+    ========================================== */
 
     .about {
-
       background: #111111;
 
       color: #ffffff;
-
     }
-
 
     .about .section-tag {
-
-      color: #e31c23;
-
+      color: #ed1c24;
     }
-
 
     .about .section-title {
-
       max-width: 1000px;
-
     }
 
-
     .about-bottom {
-
       display: grid;
 
       grid-template-columns: 1fr 1fr;
@@ -566,25 +526,19 @@
       padding-top: 30px;
 
       border-top: 1px solid #444444;
-
     }
 
-
     .about-number {
-
       font-size: clamp(80px, 12vw, 180px);
 
       line-height: 0.8;
 
       letter-spacing: -10px;
 
-      color: #e31c23;
-
+      color: #ed1c24;
     }
 
-
     .about-text {
-
       font-size: 19px;
 
       color: #bdbdbd;
@@ -592,25 +546,19 @@
       max-width: 620px;
 
       display: flex;
-
       align-items: flex-end;
-
     }
 
 
-    /* =========================
+    /* =========================================
        SERVICIOS
-    ========================== */
+    ========================================== */
 
     .services-list {
-
       border-top: 1px solid #111111;
-
     }
 
-
     .service {
-
       display: grid;
 
       grid-template-columns: 70px 1fr auto;
@@ -624,81 +572,57 @@
       border-bottom: 1px solid #111111;
 
       transition: 0.2s ease;
-
     }
-
 
     .service:hover {
-
       padding-left: 15px;
-
     }
 
-
     .service-number {
-
       font-size: 11px;
 
       opacity: 0.5;
-
     }
 
-
     .service h3 {
-
       font-size: clamp(22px, 3vw, 35px);
 
       letter-spacing: -1px;
 
       font-weight: 500;
-
     }
-
 
     .service-arrow {
-
       font-size: 24px;
 
-      color: #e31c23;
-
+      color: #ed1c24;
     }
 
 
-    /* =========================
+    /* =========================================
        EMPRESAS
-    ========================== */
+    ========================================== */
 
     .business {
-
-      background: #e31c23;
+      background: #ed1c24;
 
       color: #ffffff;
-
     }
 
-
     .business .section-tag {
-
       color: #ffffff;
 
       opacity: 0.7;
-
     }
-
 
     .business .section-title {
-
       max-width: 1000px;
-
     }
 
-
     .business-bottom {
-
       display: flex;
 
       justify-content: space-between;
-
       align-items: flex-end;
 
       gap: 50px;
@@ -706,21 +630,15 @@
       border-top: 1px solid rgba(255,255,255,0.5);
 
       padding-top: 30px;
-
     }
 
-
     .business p {
-
       max-width: 600px;
 
       font-size: 18px;
-
     }
 
-
     .business-button {
-
       display: inline-block;
 
       background: #ffffff;
@@ -730,7 +648,6 @@
       padding: 17px 24px;
 
       font-size: 11px;
-
       font-weight: 500;
 
       letter-spacing: 1px;
@@ -740,32 +657,24 @@
       white-space: nowrap;
 
       transition: 0.2s ease;
-
     }
 
-
     .business-button:hover {
-
       background: #111111;
 
       color: #ffffff;
-
     }
 
 
-    /* =========================
+    /* =========================================
        CONTACTO
-    ========================== */
+    ========================================== */
 
     .contact {
-
       background: #f4f4f2;
-
     }
 
-
     .contact-wrapper {
-
       display: grid;
 
       grid-template-columns: 1fr 1fr;
@@ -773,28 +682,19 @@
       gap: 80px;
 
       align-items: end;
-
     }
-
 
     .contact .section-title {
-
       margin-bottom: 0;
-
     }
 
-
     .contact-right {
-
       border-top: 1px solid #111111;
 
       padding-top: 25px;
-
     }
 
-
     .contact-right p {
-
       font-size: 17px;
 
       margin-bottom: 30px;
@@ -802,12 +702,9 @@
       max-width: 500px;
 
       color: #555555;
-
     }
 
-
     .contact-button {
-
       display: inline-block;
 
       background: #111111;
@@ -817,7 +714,6 @@
       padding: 17px 24px;
 
       font-size: 11px;
-
       font-weight: 500;
 
       letter-spacing: 1px;
@@ -825,23 +721,18 @@
       text-transform: uppercase;
 
       transition: 0.2s ease;
-
     }
-
 
     .contact-button:hover {
-
-      background: #e31c23;
-
+      background: #ed1c24;
     }
 
 
-    /* =========================
+    /* =========================================
        FOOTER
-    ========================== */
+    ========================================== */
 
     footer {
-
       background: #111111;
 
       color: #ffffff;
@@ -859,221 +750,178 @@
       letter-spacing: 1px;
 
       text-transform: uppercase;
-
     }
 
 
-    /* =========================
+    /* =========================================
        MOBILE
-    ========================== */
+    ========================================== */
 
     @media (max-width: 850px) {
 
       header {
-
         min-height: 76px;
 
         padding: 14px 5%;
-
       }
-
 
       .logo img {
-
         height: 44px;
-
       }
-
 
       nav {
-
         gap: 10px;
-
       }
-
 
       nav a:not(.nav-button) {
-
         display: none;
-
       }
 
-
       .nav-button {
-
         padding: 11px 14px;
-
       }
 
 
       .hero {
-
         display: block;
 
         min-height: auto;
-
       }
-
 
       .hero-main {
-
         padding: 55px 5% 45px;
-
       }
 
-
       .hero h1 {
-
         font-size: clamp(55px, 16vw, 88px);
 
         letter-spacing: -4px;
 
         margin: 70px 0 50px;
-
       }
 
-
       .hero-bottom {
-
         flex-direction: column;
 
         align-items: flex-start;
-
       }
-
 
       .hero-buttons {
-
         width: 100%;
-
       }
-
 
       .hero-btn-primary,
       .hero-btn-secondary {
-
         width: 100%;
 
         text-align: center;
-
       }
 
+
+      /* HERO ROJO MOBILE */
 
       .hero-side {
-
-        min-height: 300px;
+        min-height: 620px;
 
         padding: 30px 5%;
-
       }
 
+      .hero-side-image {
+        width: 62%;
+        height: 62%;
+
+        top: 50%;
+
+        object-position: center;
+      }
+
+      .hero-side-number {
+        top: 30px;
+        left: 5%;
+      }
 
       .hero-side-title {
+        top: 50%;
+        left: 50%;
 
-        writing-mode: horizontal-tb;
+        transform: translate(-50%, -50%);
 
-        transform: none;
+        text-align: center;
 
-        align-self: flex-start;
+        font-size: clamp(34px, 11vw, 54px);
 
-        font-size: 55px;
+        line-height: 0.88;
 
+        white-space: normal;
+
+        width: 90%;
+      }
+
+      .hero-side-bottom {
+        left: 5%;
+        right: 5%;
+        bottom: 30px;
       }
 
 
       section.section {
-
         padding: 90px 5%;
-
       }
 
-
       .section-title {
-
         letter-spacing: -3px;
 
         margin-bottom: 50px;
-
       }
-
 
       .product-grid {
-
         grid-template-columns: 1fr;
-
       }
-
 
       .product-card {
-
         min-height: 250px;
-
       }
 
-
       .about-bottom {
-
         grid-template-columns: 1fr;
 
         gap: 50px;
-
       }
-
 
       .about-number {
-
         letter-spacing: -5px;
-
       }
-
 
       .service {
-
         grid-template-columns: 45px 1fr auto;
-
       }
 
-
       .business-bottom {
-
         flex-direction: column;
 
         align-items: flex-start;
-
       }
 
-
       .business-button {
-
         width: 100%;
 
         text-align: center;
-
       }
 
-
       .contact-wrapper {
-
         grid-template-columns: 1fr;
 
         gap: 50px;
-
       }
 
-
       .contact-button {
-
         width: 100%;
 
         text-align: center;
-
       }
 
-
       footer {
-
         flex-direction: column;
-
       }
 
     }
@@ -1086,9 +934,9 @@
 <body>
 
 
-  <!-- =========================
+  <!-- =========================================
        HEADER
-  ========================== -->
+  ========================================== -->
 
   <header>
 
@@ -1096,14 +944,19 @@
       <img src="logo-segu-tec.png" alt="SEGU TEC">
     </a>
 
-
     <nav>
 
-      <a href="#productos">PRODUCTOS</a>
+      <a href="#productos">
+        PRODUCTOS
+      </a>
 
-      <a href="#servicios">SERVICIOS</a>
+      <a href="#servicios">
+        SERVICIOS
+      </a>
 
-      <a href="#nosotros">SEGU TEC</a>
+      <a href="#nosotros">
+        SEGU TEC
+      </a>
 
       <a href="#contacto" class="nav-button">
         CONTACTO ↗
@@ -1118,12 +971,14 @@
   <main>
 
 
-    <!-- =========================
+    <!-- =========================================
          HERO
-    ========================== -->
+    ========================================== -->
 
     <section class="hero">
 
+
+      <!-- IZQUIERDA -->
 
       <div class="hero-main">
 
@@ -1159,20 +1014,13 @@
 
           <div class="hero-buttons">
 
-
             <a href="#productos" class="hero-btn-primary">
-
               VER PRODUCTOS ↗
-
             </a>
-
 
             <a href="#contacto" class="hero-btn-secondary">
-
               PEDIR PRESUPUESTO
-
             </a>
-
 
           </div>
 
@@ -1184,21 +1032,28 @@
 
 
 
+      <!-- DERECHA ROJA -->
+
       <div class="hero-side">
 
 
         <div class="hero-side-number">
-
           SEG / 001
-
         </div>
+
+
+        <img
+          src="hero-fondo.jpg"
+          alt="Matafuego SEGU TEC"
+          class="hero-side-image"
+        >
 
 
         <div class="hero-side-title">
 
-          SEGURIDAD<br>
-          CONTRA<br>
-          INCENDIOS
+          <span>SEGURIDAD</span>
+          <span>CONTRA</span>
+          <span>INCENDIOS</span>
 
         </div>
 
@@ -1206,11 +1061,9 @@
         <div class="hero-side-bottom">
 
           <p>
-
             PREVENCIÓN<br>
             PROTECCIÓN<br>
             SEGURIDAD
-
           </p>
 
         </div>
@@ -1223,17 +1076,15 @@
 
 
 
-    <!-- =========================
+    <!-- =========================================
          PRODUCTOS
-    ========================== -->
+    ========================================== -->
 
     <section class="section products" id="productos">
 
 
       <div class="section-tag">
-
         01 / PRODUCTOS
-
       </div>
 
 
@@ -1409,17 +1260,15 @@
 
 
 
-    <!-- =========================
+    <!-- =========================================
          NOSOTROS
-    ========================== -->
+    ========================================== -->
 
     <section class="section about" id="nosotros">
 
 
       <div class="section-tag">
-
         02 / SEGU TEC
-
       </div>
 
 
@@ -1457,17 +1306,15 @@
 
 
 
-    <!-- =========================
+    <!-- =========================================
          SERVICIOS
-    ========================== -->
+    ========================================== -->
 
     <section class="section" id="servicios">
 
 
       <div class="section-tag">
-
         03 / SERVICIOS
-
       </div>
 
 
@@ -1559,17 +1406,15 @@
 
 
 
-    <!-- =========================
+    <!-- =========================================
          EMPRESAS
-    ========================== -->
+    ========================================== -->
 
     <section class="section business">
 
 
       <div class="section-tag">
-
         04 / EMPRESAS
-
       </div>
 
 
@@ -1606,17 +1451,15 @@
 
 
 
-    <!-- =========================
+    <!-- =========================================
          CONTACTO
-    ========================== -->
+    ========================================== -->
 
     <section class="section contact" id="contacto">
 
 
       <div class="section-tag">
-
         05 / CONTACTO
-
       </div>
 
 
@@ -1662,31 +1505,25 @@
 
 
 
-  <!-- =========================
+  <!-- =========================================
        FOOTER
-  ========================== -->
+  ========================================== -->
 
   <footer>
 
 
     <div>
-
       © 2026 SEGU TEC
-
     </div>
 
 
     <div>
-
       SEGURIDAD Y PREVENCIÓN CONTRA INCENDIOS
-
     </div>
 
 
     <div>
-
       PROTECCIÓN CONTRA INCENDIOS + SEGURIDAD
-
     </div>
 
 
