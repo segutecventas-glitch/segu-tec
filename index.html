@@ -75,7 +75,6 @@
     header {
       width: 100%;
       min-height: 88px;
-
       padding: 16px 6%;
 
       display: flex;
@@ -83,7 +82,6 @@
       align-items: center;
 
       background: rgba(255, 255, 255, 0.97);
-
       border-bottom: 1px solid #111111;
 
       position: sticky;
@@ -125,9 +123,7 @@
     .nav-button {
       background: #111111;
       color: #ffffff;
-
       padding: 14px 22px;
-
       transition: 0.2s ease;
     }
 
@@ -151,7 +147,7 @@
     }
 
 
-    /* IZQUIERDA */
+    /* HERO IZQUIERDA */
 
     .hero-main {
       padding: 70px 8% 55px;
@@ -170,8 +166,8 @@
 
       font-size: 11px;
       font-weight: 500;
-
       letter-spacing: 1.8px;
+
       text-transform: uppercase;
     }
 
@@ -180,7 +176,6 @@
       height: 9px;
 
       background: #ed1c24;
-
       flex-shrink: 0;
     }
 
@@ -191,7 +186,6 @@
       letter-spacing: -7px;
 
       font-weight: 700;
-
       text-transform: uppercase;
 
       margin: 80px 0 70px;
@@ -211,15 +205,12 @@
       gap: 40px;
 
       border-top: 1px solid #111111;
-
       padding-top: 25px;
     }
 
     .hero-description {
       max-width: 480px;
-
       font-size: 17px;
-
       color: #444444;
     }
 
@@ -245,7 +236,6 @@
     .hero-btn-primary {
       background: #111111;
       color: #ffffff;
-
       border: 1px solid #111111;
     }
 
@@ -256,7 +246,6 @@
 
     .hero-btn-secondary {
       border: 1px solid #111111;
-
       background: transparent;
     }
 
@@ -274,8 +263,6 @@
       background: #ed1c24;
       color: #ffffff;
 
-      padding: 40px;
-
       position: relative;
       overflow: hidden;
 
@@ -283,23 +270,23 @@
     }
 
 
-    /* FOTO CENTRAL */
+    /* FOTO */
 
     .hero-side-image {
       position: absolute;
 
-      width: 72%;
-      height: 58%;
+      width: 46%;
+      height: 72%;
 
       top: 50%;
-      left: 50%;
+      left: 42%;
 
       transform: translate(-50%, -50%);
 
       object-fit: cover;
       object-position: center;
 
-      filter: brightness(0.76) contrast(1.05);
+      filter: brightness(0.78) contrast(1.05);
 
       z-index: 1;
     }
@@ -316,41 +303,37 @@
       z-index: 5;
 
       font-size: 11px;
-
       letter-spacing: 2px;
     }
 
 
-    /* TITULO SOBRE LA FOTO */
+    /* TITULO COSTADO */
 
     .hero-side-title {
       position: absolute;
 
       top: 50%;
-      left: 50%;
+      right: -58px;
 
-      transform:
-        translate(-50%, -50%)
-        rotate(-90deg);
+      transform: translateY(-50%) rotate(-90deg);
 
       z-index: 5;
 
       color: #ffffff;
 
-      font-size: clamp(32px, 3.4vw, 58px);
+      font-size: clamp(30px, 2.8vw, 48px);
 
-      line-height: 0.86;
-
-      letter-spacing: -2px;
+      line-height: 0.88;
+      letter-spacing: -1px;
 
       font-weight: 700;
-
       text-transform: uppercase;
+
+      text-align: left;
 
       white-space: nowrap;
 
-      text-shadow:
-        0px 3px 14px rgba(0, 0, 0, 0.30);
+      text-shadow: 0 3px 14px rgba(0,0,0,0.18);
     }
 
     .hero-side-title span {
@@ -358,7 +341,7 @@
     }
 
 
-    /* TEXTO INFERIOR */
+    /* PARTE INFERIOR */
 
     .hero-side-bottom {
       position: absolute;
@@ -378,7 +361,6 @@
       font-size: 10px;
 
       line-height: 1.7;
-
       letter-spacing: 1.5px;
 
       text-transform: uppercase;
@@ -386,7 +368,7 @@
 
 
     /* =========================================
-       SECCIONES GENERALES
+       SECCIONES
     ========================================== */
 
     section.section {
@@ -411,7 +393,6 @@
       font-size: clamp(45px, 6vw, 82px);
 
       line-height: 0.92;
-
       letter-spacing: -4px;
 
       font-weight: 700;
@@ -432,7 +413,6 @@
 
     .product-grid {
       display: grid;
-
       grid-template-columns: repeat(3, 1fr);
 
       border-top: 1px solid #111111;
@@ -463,9 +443,7 @@
 
     .product-number {
       font-size: 11px;
-
       letter-spacing: 1px;
-
       opacity: 0.5;
     }
 
@@ -473,7 +451,6 @@
       font-size: 28px;
 
       line-height: 1;
-
       letter-spacing: -1px;
 
       margin-bottom: 12px;
@@ -489,9 +466,7 @@
 
     .product-arrow {
       margin-top: 25px;
-
       font-size: 22px;
-
       color: #ed1c24;
     }
 
@@ -502,7 +477,6 @@
 
     .about {
       background: #111111;
-
       color: #ffffff;
     }
 
@@ -516,13 +490,11 @@
 
     .about-bottom {
       display: grid;
-
       grid-template-columns: 1fr 1fr;
 
       gap: 80px;
 
       margin-top: 90px;
-
       padding-top: 30px;
 
       border-top: 1px solid #444444;
@@ -532,7 +504,6 @@
       font-size: clamp(80px, 12vw, 180px);
 
       line-height: 0.8;
-
       letter-spacing: -10px;
 
       color: #ed1c24;
@@ -540,7 +511,6 @@
 
     .about-text {
       font-size: 19px;
-
       color: #bdbdbd;
 
       max-width: 620px;
@@ -560,7 +530,6 @@
 
     .service {
       display: grid;
-
       grid-template-columns: 70px 1fr auto;
 
       align-items: center;
@@ -580,7 +549,6 @@
 
     .service-number {
       font-size: 11px;
-
       opacity: 0.5;
     }
 
@@ -588,13 +556,11 @@
       font-size: clamp(22px, 3vw, 35px);
 
       letter-spacing: -1px;
-
       font-weight: 500;
     }
 
     .service-arrow {
       font-size: 24px;
-
       color: #ed1c24;
     }
 
@@ -605,13 +571,11 @@
 
     .business {
       background: #ed1c24;
-
       color: #ffffff;
     }
 
     .business .section-tag {
       color: #ffffff;
-
       opacity: 0.7;
     }
 
@@ -634,7 +598,6 @@
 
     .business p {
       max-width: 600px;
-
       font-size: 18px;
     }
 
@@ -642,7 +605,6 @@
       display: inline-block;
 
       background: #ffffff;
-
       color: #111111;
 
       padding: 17px 24px;
@@ -651,7 +613,6 @@
       font-weight: 500;
 
       letter-spacing: 1px;
-
       text-transform: uppercase;
 
       white-space: nowrap;
@@ -661,7 +622,6 @@
 
     .business-button:hover {
       background: #111111;
-
       color: #ffffff;
     }
 
@@ -676,7 +636,6 @@
 
     .contact-wrapper {
       display: grid;
-
       grid-template-columns: 1fr 1fr;
 
       gap: 80px;
@@ -690,7 +649,6 @@
 
     .contact-right {
       border-top: 1px solid #111111;
-
       padding-top: 25px;
     }
 
@@ -708,7 +666,6 @@
       display: inline-block;
 
       background: #111111;
-
       color: #ffffff;
 
       padding: 17px 24px;
@@ -717,7 +674,6 @@
       font-weight: 500;
 
       letter-spacing: 1px;
-
       text-transform: uppercase;
 
       transition: 0.2s ease;
@@ -734,19 +690,16 @@
 
     footer {
       background: #111111;
-
       color: #ffffff;
 
       padding: 35px 6%;
 
       display: flex;
-
       justify-content: space-between;
 
       gap: 30px;
 
       font-size: 10px;
-
       letter-spacing: 1px;
 
       text-transform: uppercase;
@@ -761,7 +714,6 @@
 
       header {
         min-height: 76px;
-
         padding: 14px 5%;
       }
 
@@ -784,7 +736,6 @@
 
       .hero {
         display: block;
-
         min-height: auto;
       }
 
@@ -802,7 +753,6 @@
 
       .hero-bottom {
         flex-direction: column;
-
         align-items: flex-start;
       }
 
@@ -813,7 +763,6 @@
       .hero-btn-primary,
       .hero-btn-secondary {
         width: 100%;
-
         text-align: center;
       }
 
@@ -822,17 +771,13 @@
 
       .hero-side {
         min-height: 620px;
-
-        padding: 30px 5%;
       }
 
       .hero-side-image {
-        width: 62%;
-        height: 62%;
+        width: 48%;
+        height: 70%;
 
-        top: 50%;
-
-        object-position: center;
+        left: 42%;
       }
 
       .hero-side-number {
@@ -841,20 +786,9 @@
       }
 
       .hero-side-title {
-        top: 50%;
-        left: 50%;
+        right: -40px;
 
-        transform: translate(-50%, -50%);
-
-        text-align: center;
-
-        font-size: clamp(34px, 11vw, 54px);
-
-        line-height: 0.88;
-
-        white-space: normal;
-
-        width: 90%;
+        font-size: 34px;
       }
 
       .hero-side-bottom {
@@ -870,7 +804,6 @@
 
       .section-title {
         letter-spacing: -3px;
-
         margin-bottom: 50px;
       }
 
@@ -884,7 +817,6 @@
 
       .about-bottom {
         grid-template-columns: 1fr;
-
         gap: 50px;
       }
 
@@ -898,25 +830,21 @@
 
       .business-bottom {
         flex-direction: column;
-
         align-items: flex-start;
       }
 
       .business-button {
         width: 100%;
-
         text-align: center;
       }
 
       .contact-wrapper {
         grid-template-columns: 1fr;
-
         gap: 50px;
       }
 
       .contact-button {
         width: 100%;
-
         text-align: center;
       }
 
@@ -934,9 +862,7 @@
 <body>
 
 
-  <!-- =========================================
-       HEADER
-  ========================================== -->
+  <!-- HEADER -->
 
   <header>
 
@@ -971,14 +897,12 @@
   <main>
 
 
-    <!-- =========================================
-         HERO
-    ========================================== -->
+    <!-- HERO -->
 
     <section class="hero">
 
 
-      <!-- IZQUIERDA -->
+      <!-- HERO IZQUIERDA -->
 
       <div class="hero-main">
 
@@ -1032,7 +956,7 @@
 
 
 
-      <!-- DERECHA ROJA -->
+      <!-- HERO DERECHO -->
 
       <div class="hero-side">
 
@@ -1076,9 +1000,7 @@
 
 
 
-    <!-- =========================================
-         PRODUCTOS
-    ========================================== -->
+    <!-- PRODUCTOS -->
 
     <section class="section products" id="productos">
 
@@ -1089,9 +1011,7 @@
 
 
       <h2 class="section-title">
-
         TODO LO QUE NECESITÁS PARA PROTEGER TU ESPACIO.
-
       </h2>
 
 
@@ -1260,9 +1180,7 @@
 
 
 
-    <!-- =========================================
-         NOSOTROS
-    ========================================== -->
+    <!-- NOSOTROS -->
 
     <section class="section about" id="nosotros">
 
@@ -1273,9 +1191,7 @@
 
 
       <h2 class="section-title">
-
         PREVENIR TAMBIÉN ES PROTEGER.
-
       </h2>
 
 
@@ -1283,9 +1199,7 @@
 
 
         <div class="about-number">
-
           360°
-
         </div>
 
 
@@ -1306,9 +1220,7 @@
 
 
 
-    <!-- =========================================
-         SERVICIOS
-    ========================================== -->
+    <!-- SERVICIOS -->
 
     <section class="section" id="servicios">
 
@@ -1319,9 +1231,7 @@
 
 
       <h2 class="section-title">
-
         MÁS QUE PRODUCTOS.
-
       </h2>
 
 
@@ -1406,9 +1316,7 @@
 
 
 
-    <!-- =========================================
-         EMPRESAS
-    ========================================== -->
+    <!-- EMPRESAS -->
 
     <section class="section business">
 
@@ -1419,9 +1327,7 @@
 
 
       <h2 class="section-title">
-
         ¿NECESITÁS EQUIPAR TU COMERCIO O EMPRESA?
-
       </h2>
 
 
@@ -1438,9 +1344,7 @@
 
 
         <a href="#contacto" class="business-button">
-
           SOLICITAR PRESUPUESTO ↗
-
         </a>
 
 
@@ -1451,9 +1355,7 @@
 
 
 
-    <!-- =========================================
-         CONTACTO
-    ========================================== -->
+    <!-- CONTACTO -->
 
     <section class="section contact" id="contacto">
 
@@ -1467,9 +1369,7 @@
 
 
         <h2 class="section-title">
-
           PROTEGÉ HOY LO QUE IMPORTA.
-
         </h2>
 
 
@@ -1486,9 +1386,7 @@
 
 
           <a href="#" class="contact-button">
-
             HABLAR CON SEGU TEC ↗
-
           </a>
 
 
@@ -1505,9 +1403,7 @@
 
 
 
-  <!-- =========================================
-       FOOTER
-  ========================================== -->
+  <!-- FOOTER -->
 
   <footer>
 
